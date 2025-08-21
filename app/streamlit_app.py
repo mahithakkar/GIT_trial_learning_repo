@@ -47,7 +47,8 @@ with tab_chat:
         
         with st.chat_message("user"):
             st.markdown(user_text)
-            
+    
+    #added chatbot      
     with st.chat_message("assistant"):
         try:
             resp = client.chat.completions.create(
